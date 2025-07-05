@@ -9,6 +9,7 @@ volumes:
 
 services:
   n8n:
+    container_name: n8n
     image: docker.n8n.io/n8nio/n8n
     restart: always
     environment:
@@ -31,6 +32,7 @@ services:
       - projetos-vps
 
   evolution_v2:
+    container_name: evolutionv2
     image: atendai/evolution-api:v2.2.3
     restart: unless-stopped
     networks:
