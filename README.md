@@ -4,15 +4,16 @@
 
 ## Descrição
 
-Crie esse repo para facilitar a configuração desses serviços em VPS particulares. O docker compose tem as 
-configurações necessárias para criar um container do N8N e também um container do EvolutionApi.
+Crie esse repo para facilitar a configuração desses serviços em VPS particulares. O docker compose tem as configurações necessárias para criar um container do N8N e também um container do EvolutionApi.
 
-## Principais Funcionalidades
+## Principais funcionalidades
 
-- N8n: Ferramenta completa para criação de fluxos automatizados e com integração com AI.
-- EvolutionApi: plataforma de código aberto que permite a integração e gerenciamento do WhatsApp através de uma API.
+O arquivo `docker-compose.yml` define os seguintes serviços:
 
-## Tecnologias Utilizadas
+- **N8n**: Ferramenta completa para criação de fluxos automatizados e com integração com AI.
+- **EvolutionApi**: plataforma de código aberto que permite a integração e gerenciamento do WhatsApp através de uma API.
+
+## Tecnologias utilizadas
 
 ![Docker](https://img.shields.io/badge/docker-257bd6?style=for-the-badge&logo=docker&logoColor=white)
 
@@ -26,7 +27,8 @@ configurações necessárias para criar um container do N8N e também um contain
 
 ## Configuração
 
-- Renomeie arquivo .env.sample para .env, e adicione as configurações conforme necessário. 
+1. Renomeie o arquivo `.env.sample` para `.env` e preencha as variáveis de ambiente.
+2. Rode `docker-compose up -d` para subir os serviços.
 
 ## Makefile
 
